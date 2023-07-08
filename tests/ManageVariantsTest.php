@@ -1,13 +1,13 @@
 <?php
 
-namespace Signifly\Shopify\Tests;
+namespace Pactode\Shopify\Tests;
 
 use Illuminate\Http\Client\Request;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Http;
-use Signifly\Shopify\Factory;
-use Signifly\Shopify\REST\Resources\VariantResource;
-use Signifly\Shopify\Shopify;
+use Pactode\Shopify\Factory;
+use Pactode\Shopify\REST\Resources\VariantResource;
+use Pactode\Shopify\Shopify;
 
 class ManageVariantsTest extends TestCase
 {

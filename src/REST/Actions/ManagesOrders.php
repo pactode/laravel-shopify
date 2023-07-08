@@ -1,16 +1,16 @@
 <?php
 
-namespace Signifly\Shopify\REST\Actions;
+namespace Pactode\Shopify\REST\Actions;
 
 use Illuminate\Support\Collection;
-use Signifly\Shopify\REST\Cursor;
-use Signifly\Shopify\REST\Resources\ApiResource;
-use Signifly\Shopify\REST\Resources\DraftOrderResource;
-use Signifly\Shopify\REST\Resources\OrderResource;
-use Signifly\Shopify\REST\Resources\RefundResource;
-use Signifly\Shopify\REST\Resources\RiskResource;
-use Signifly\Shopify\REST\Resources\TransactionResource;
-use Signifly\Shopify\Shopify;
+use Pactode\Shopify\REST\Cursor;
+use Pactode\Shopify\REST\Resources\ApiResource;
+use Pactode\Shopify\REST\Resources\DraftOrderResource;
+use Pactode\Shopify\REST\Resources\OrderResource;
+use Pactode\Shopify\REST\Resources\RefundResource;
+use Pactode\Shopify\REST\Resources\RiskResource;
+use Pactode\Shopify\REST\Resources\TransactionResource;
+use Pactode\Shopify\Shopify;
 
 /** @mixin Shopify */
 trait ManagesOrders

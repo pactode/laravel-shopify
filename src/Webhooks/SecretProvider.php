@@ -1,6 +1,6 @@
 <?php
 
-namespace Signifly\Shopify\Webhooks;
+namespace Pactode\Shopify\Webhooks;
 
 interface SecretProvider
 {

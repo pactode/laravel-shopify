@@ -1,12 +1,12 @@
 <?php
 
-namespace Signifly\Shopify\REST\Actions;
+namespace Pactode\Shopify\REST\Actions;
 
 use Illuminate\Support\Collection;
-use Signifly\Shopify\REST\Cursor;
-use Signifly\Shopify\REST\Resources\ApiResource;
-use Signifly\Shopify\REST\Resources\CustomerResource;
-use Signifly\Shopify\Shopify;
+use Pactode\Shopify\REST\Cursor;
+use Pactode\Shopify\REST\Resources\ApiResource;
+use Pactode\Shopify\REST\Resources\CustomerResource;
+use Pactode\Shopify\Shopify;
 
 /** @mixin Shopify */
 trait ManagesCustomers

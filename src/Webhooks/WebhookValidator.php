@@ -1,10 +1,10 @@
 <?php
 
-namespace Signifly\Shopify\Webhooks;
+namespace Pactode\Shopify\Webhooks;
 
 use Illuminate\Http\Request;
-use Signifly\Shopify\Exceptions\WebhookFailed;
-use Signifly\Shopify\Support\VerifiesWebhooks;
+use Pactode\Shopify\Exceptions\WebhookFailed;
+use Pactode\Shopify\Support\VerifiesWebhooks;
 
 class WebhookValidator
 {

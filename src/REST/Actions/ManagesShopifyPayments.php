@@ -1,12 +1,12 @@
 <?php
 
-namespace Signifly\Shopify\REST\Actions;
+namespace Pactode\Shopify\REST\Actions;
 
 use Illuminate\Support\Collection;
-use Signifly\Shopify\REST\Resources\BalanceResource;
-use Signifly\Shopify\REST\Resources\DisputeResource;
-use Signifly\Shopify\REST\Resources\PayoutResource;
-use Signifly\Shopify\Shopify;
+use Pactode\Shopify\REST\Resources\BalanceResource;
+use Pactode\Shopify\REST\Resources\DisputeResource;
+use Pactode\Shopify\REST\Resources\PayoutResource;
+use Pactode\Shopify\Shopify;
 
 /** @mixin Shopify */
 trait ManagesShopifyPayments

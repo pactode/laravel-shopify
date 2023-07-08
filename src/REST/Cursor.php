@@ -1,13 +1,13 @@
 <?php
 
-namespace Signifly\Shopify\REST;
+namespace Pactode\Shopify\REST;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 use Iterator;
 use RuntimeException;
-use Signifly\Shopify\Shopify;
+use Pactode\Shopify\Shopify;
 
 class Cursor implements Iterator
 {

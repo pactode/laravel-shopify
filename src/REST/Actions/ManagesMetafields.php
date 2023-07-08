@@ -1,10 +1,10 @@
 <?php
 
-namespace Signifly\Shopify\REST\Actions;
+namespace Pactode\Shopify\REST\Actions;
 
 use Illuminate\Support\Collection;
-use Signifly\Shopify\REST\Resources\MetafieldResource;
-use Signifly\Shopify\Shopify;
+use Pactode\Shopify\REST\Resources\MetafieldResource;
+use Pactode\Shopify\Shopify;
 
 /** @mixin Shopify */
 trait ManagesMetafields

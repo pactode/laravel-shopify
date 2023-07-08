@@ -1,6 +1,6 @@
 <?php
 
-namespace Signifly\Shopify;
+namespace Pactode\Shopify;
 
 class Factory
 {

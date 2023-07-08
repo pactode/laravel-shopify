@@ -1,9 +1,9 @@
 <?php
 
-namespace Signifly\Shopify\Tests;
+namespace Pactode\Shopify\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
-use Signifly\Shopify\ShopifyServiceProvider;
+use Pactode\Shopify\ShopifyServiceProvider;
 
 abstract class TestCase extends Orchestra
 {

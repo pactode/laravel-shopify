@@ -1,13 +1,13 @@
 <?php
 
-namespace Signifly\Shopify\Tests;
+namespace Pactode\Shopify\Tests;
 
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Route;
-use Signifly\Shopify\Exceptions\WebhookFailed;
-use Signifly\Shopify\Webhooks\SecretProvider;
-use Signifly\Shopify\Webhooks\Webhook;
-use Signifly\Shopify\Webhooks\WebhookValidator;
+use Pactode\Shopify\Exceptions\WebhookFailed;
+use Pactode\Shopify\Webhooks\SecretProvider;
+use Pactode\Shopify\Webhooks\Webhook;
+use Pactode\Shopify\Webhooks\WebhookValidator;
 
 class WebhookControllerTest extends TestCase
 {

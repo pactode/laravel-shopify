@@ -1,6 +1,6 @@
 <?php
 
-namespace Signifly\Shopify\Tests;
+namespace Pactode\Shopify\Tests;
 
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;

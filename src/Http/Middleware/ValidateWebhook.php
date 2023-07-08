@@ -1,10 +1,10 @@
 <?php
 
-namespace Signifly\Shopify\Http\Middleware;
+namespace Pactode\Shopify\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Signifly\Shopify\Webhooks\WebhookValidator;
+use Pactode\Shopify\Webhooks\WebhookValidator;
 
 class ValidateWebhook
 {

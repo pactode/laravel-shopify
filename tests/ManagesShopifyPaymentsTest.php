@@ -1,16 +1,16 @@
 <?php
 
-namespace Signifly\Shopify\Tests;
+namespace Pactode\Shopify\Tests;
 
 use Illuminate\Http\Client\Request;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Http;
-use Signifly\Shopify\Factory;
-use Signifly\Shopify\REST\Resources\BalanceResource;
-use Signifly\Shopify\REST\Resources\DisputeResource;
-use Signifly\Shopify\REST\Resources\PayoutResource;
-use Signifly\Shopify\REST\Resources\TransactionResource;
-use Signifly\Shopify\Shopify;
+use Pactode\Shopify\Factory;
+use Pactode\Shopify\REST\Resources\BalanceResource;
+use Pactode\Shopify\REST\Resources\DisputeResource;
+use Pactode\Shopify\REST\Resources\PayoutResource;
+use Pactode\Shopify\REST\Resources\TransactionResource;
+use Pactode\Shopify\Shopify;
 
 class ManagesShopifyPaymentsTest extends TestCase
 {

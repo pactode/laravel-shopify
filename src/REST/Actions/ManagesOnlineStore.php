@@ -1,15 +1,15 @@
 <?php
 
-namespace Signifly\Shopify\REST\Actions;
+namespace Pactode\Shopify\REST\Actions;
 
 use Illuminate\Support\Collection;
-use Signifly\Shopify\REST\Cursor;
-use Signifly\Shopify\REST\Resources\ApiResource;
-use Signifly\Shopify\REST\Resources\ArticleResource;
-use Signifly\Shopify\REST\Resources\AssetResource;
-use Signifly\Shopify\REST\Resources\BlogResource;
-use Signifly\Shopify\REST\Resources\PageResource;
-use Signifly\Shopify\Shopify;
+use Pactode\Shopify\REST\Cursor;
+use Pactode\Shopify\REST\Resources\ApiResource;
+use Pactode\Shopify\REST\Resources\ArticleResource;
+use Pactode\Shopify\REST\Resources\AssetResource;
+use Pactode\Shopify\REST\Resources\BlogResource;
+use Pactode\Shopify\REST\Resources\PageResource;
+use Pactode\Shopify\Shopify;
 
 /** @mixin Shopify */
 trait ManagesOnlineStore

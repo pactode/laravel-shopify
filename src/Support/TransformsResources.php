@@ -1,9 +1,9 @@
 <?php
 
-namespace Signifly\Shopify\Support;
+namespace Pactode\Shopify\Support;
 
 use Illuminate\Support\Collection;
-use Signifly\Shopify\REST\Resources\ApiResource;
+use Pactode\Shopify\REST\Resources\ApiResource;
 
 trait TransformsResources
 {

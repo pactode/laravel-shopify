@@ -1,6 +1,6 @@
 <?php
 
-namespace Signifly\Shopify\Http\Controllers;
+namespace Pactode\Shopify\Http\Controllers;
 
 use Exception;
 use Illuminate\Http\JsonResponse;
@@ -9,8 +9,8 @@ use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Log;
-use Signifly\Shopify\Http\Middleware\ValidateWebhook;
-use Signifly\Shopify\Webhooks\Webhook;
+use Pactode\Shopify\Http\Middleware\ValidateWebhook;
+use Pactode\Shopify\Webhooks\Webhook;
 
 class WebhookController extends Controller
 {

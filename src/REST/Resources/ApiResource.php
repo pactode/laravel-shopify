@@ -1,13 +1,13 @@
 <?php
 
-namespace Signifly\Shopify\REST\Resources;
+namespace Pactode\Shopify\REST\Resources;
 
 use ArrayAccess;
 use Exception;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Traits\Macroable;
-use Signifly\Shopify\Shopify;
+use Pactode\Shopify\Shopify;
 
 class ApiResource implements ArrayAccess, Arrayable
 {

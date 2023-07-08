@@ -1,31 +1,31 @@
 <?php
 
-namespace Signifly\Shopify;
+namespace Pactode\Shopify;
 
 use Illuminate\Http\Client\PendingRequest;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Http;
-use Signifly\Shopify\REST\Actions\ManagesAccess;
-use Signifly\Shopify\REST\Actions\ManagesAnalytics;
-use Signifly\Shopify\REST\Actions\ManagesBilling;
-use Signifly\Shopify\REST\Actions\ManagesCollections;
-use Signifly\Shopify\REST\Actions\ManagesCustomers;
-use Signifly\Shopify\REST\Actions\ManagesDiscounts;
-use Signifly\Shopify\REST\Actions\ManagesEvents;
-use Signifly\Shopify\REST\Actions\ManagesFulfillments;
-use Signifly\Shopify\REST\Actions\ManagesInventory;
-use Signifly\Shopify\REST\Actions\ManagesMarketingEvents;
-use Signifly\Shopify\REST\Actions\ManagesMetafields;
-use Signifly\Shopify\REST\Actions\ManagesOnlineStore;
-use Signifly\Shopify\REST\Actions\ManagesOrders;
-use Signifly\Shopify\REST\Actions\ManagesPlus;
-use Signifly\Shopify\REST\Actions\ManagesProducts;
-use Signifly\Shopify\REST\Actions\ManagesSalesChannel;
-use Signifly\Shopify\REST\Actions\ManagesShopifyPayments;
-use Signifly\Shopify\REST\Actions\ManagesStoreProperties;
-use Signifly\Shopify\REST\Cursor;
-use Signifly\Shopify\Support\MakesHttpRequests;
-use Signifly\Shopify\Support\TransformsResources;
+use Pactode\Shopify\REST\Actions\ManagesAccess;
+use Pactode\Shopify\REST\Actions\ManagesAnalytics;
+use Pactode\Shopify\REST\Actions\ManagesBilling;
+use Pactode\Shopify\REST\Actions\ManagesCollections;
+use Pactode\Shopify\REST\Actions\ManagesCustomers;
+use Pactode\Shopify\REST\Actions\ManagesDiscounts;
+use Pactode\Shopify\REST\Actions\ManagesEvents;
+use Pactode\Shopify\REST\Actions\ManagesFulfillments;
+use Pactode\Shopify\REST\Actions\ManagesInventory;
+use Pactode\Shopify\REST\Actions\ManagesMarketingEvents;
+use Pactode\Shopify\REST\Actions\ManagesMetafields;
+use Pactode\Shopify\REST\Actions\ManagesOnlineStore;
+use Pactode\Shopify\REST\Actions\ManagesOrders;
+use Pactode\Shopify\REST\Actions\ManagesPlus;
+use Pactode\Shopify\REST\Actions\ManagesProducts;
+use Pactode\Shopify\REST\Actions\ManagesSalesChannel;
+use Pactode\Shopify\REST\Actions\ManagesShopifyPayments;
+use Pactode\Shopify\REST\Actions\ManagesStoreProperties;
+use Pactode\Shopify\REST\Cursor;
+use Pactode\Shopify\Support\MakesHttpRequests;
+use Pactode\Shopify\Support\TransformsResources;
 
 class Shopify
 {

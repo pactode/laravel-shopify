@@ -1,13 +1,13 @@
 <?php
 
-namespace Signifly\Shopify\REST\Actions;
+namespace Pactode\Shopify\REST\Actions;
 
 use Illuminate\Support\Collection;
-use Signifly\Shopify\REST\Cursor;
-use Signifly\Shopify\REST\Resources\ImageResource;
-use Signifly\Shopify\REST\Resources\ProductResource;
-use Signifly\Shopify\REST\Resources\VariantResource;
-use Signifly\Shopify\Shopify;
+use Pactode\Shopify\REST\Cursor;
+use Pactode\Shopify\REST\Resources\ImageResource;
+use Pactode\Shopify\REST\Resources\ProductResource;
+use Pactode\Shopify\REST\Resources\VariantResource;
+use Pactode\Shopify\Shopify;
 
 /** @mixin Shopify */
 trait ManagesProducts

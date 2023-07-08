@@ -1,13 +1,13 @@
 <?php
 
-namespace Signifly\Shopify\Support;
+namespace Pactode\Shopify\Support;
 
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
-use Signifly\Shopify\Exceptions\ErrorHandlerInterface;
-use Signifly\Shopify\REST\Resources\ApiResource;
-use Signifly\Shopify\Shopify;
+use Pactode\Shopify\Exceptions\ErrorHandlerInterface;
+use Pactode\Shopify\REST\Resources\ApiResource;
+use Pactode\Shopify\Shopify;
 
 /**
  * @mixin Shopify
@@ -57,7 +57,7 @@ trait MakesHttpRequests
         $resourceClass = Str::of($resource)
             ->studly()
             ->singular()
-            ->prepend('Signifly\\Shopify\\REST\\Resources\\')
+            ->prepend('Pactode\\Shopify\\REST\\Resources\\')
             ->append('Resource');
 
         return class_exists($resourceClass) ? $resourceClass : ApiResource::class;

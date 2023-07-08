@@ -1,8 +1,8 @@
 <?php
 
-namespace Signifly\Shopify\Tests;
+namespace Pactode\Shopify\Tests;
 
-use Signifly\Shopify\Shopify;
+use Pactode\Shopify\Shopify;
 
 class ShopifyTest extends TestCase
 {

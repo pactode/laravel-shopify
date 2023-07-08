@@ -1,15 +1,15 @@
 <?php
 
-namespace Signifly\Shopify\REST\Actions;
+namespace Pactode\Shopify\REST\Actions;
 
 use Illuminate\Support\Collection;
-use Signifly\Shopify\REST\Cursor;
-use Signifly\Shopify\REST\Resources\ApiResource;
-use Signifly\Shopify\REST\Resources\CollectResource;
-use Signifly\Shopify\REST\Resources\CustomCollectionResource;
-use Signifly\Shopify\REST\Resources\ProductResource;
-use Signifly\Shopify\REST\Resources\SmartCollectionResource;
-use Signifly\Shopify\Shopify;
+use Pactode\Shopify\REST\Cursor;
+use Pactode\Shopify\REST\Resources\ApiResource;
+use Pactode\Shopify\REST\Resources\CollectResource;
+use Pactode\Shopify\REST\Resources\CustomCollectionResource;
+use Pactode\Shopify\REST\Resources\ProductResource;
+use Pactode\Shopify\REST\Resources\SmartCollectionResource;
+use Pactode\Shopify\Shopify;
 
 /** @mixin Shopify */
 trait ManagesCollections

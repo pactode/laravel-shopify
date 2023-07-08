@@ -1,16 +1,16 @@
 <?php
 
-namespace Signifly\Shopify;
+namespace Pactode\Shopify;
 
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use Signifly\Shopify\Exceptions\ErrorHandlerInterface;
-use Signifly\Shopify\Exceptions\Handler;
-use Signifly\Shopify\Http\Controllers\WebhookController;
-use Signifly\Shopify\Webhooks\SecretProvider;
-use Signifly\Shopify\Webhooks\Webhook;
+use Pactode\Shopify\Exceptions\ErrorHandlerInterface;
+use Pactode\Shopify\Exceptions\Handler;
+use Pactode\Shopify\Http\Controllers\WebhookController;
+use Pactode\Shopify\Webhooks\SecretProvider;
+use Pactode\Shopify\Webhooks\Webhook;
 
 class ShopifyServiceProvider extends ServiceProvider
 {

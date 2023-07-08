@@ -1,6 +1,6 @@
 <?php
 
-namespace Signifly\Shopify\Support;
+namespace Pactode\Shopify\Support;
 
 trait VerifiesWebhooks
 {

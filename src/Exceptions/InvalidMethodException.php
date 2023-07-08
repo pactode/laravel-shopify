@@ -1,6 +1,6 @@
 <?php
 
-namespace Signifly\Shopify\Exceptions;
+namespace Pactode\Shopify\Exceptions;
 
 class InvalidMethodException extends \Exception
 {

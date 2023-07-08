@@ -1,6 +1,6 @@
 <?php
 
-namespace Signifly\Shopify\REST\Actions;
+namespace Pactode\Shopify\REST\Actions;
 
 /** @mixing */
 trait ManagesSalesChannel

@@ -1,6 +1,6 @@
 <?php
 
-namespace Signifly\Shopify\REST\Resources;
+namespace Pactode\Shopify\REST\Resources;
 
 use Illuminate\Support\Collection;
 

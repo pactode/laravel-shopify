@@ -1,18 +1,18 @@
 <?php
 
-namespace Signifly\Shopify\Tests;
+namespace Pactode\Shopify\Tests;
 
 use Illuminate\Http\Client\Request;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Http;
-use Signifly\Shopify\Factory;
-use Signifly\Shopify\REST\Cursor;
-use Signifly\Shopify\REST\Resources\ApiResource;
-use Signifly\Shopify\REST\Resources\ArticleResource;
-use Signifly\Shopify\REST\Resources\AssetResource;
-use Signifly\Shopify\REST\Resources\BlogResource;
-use Signifly\Shopify\REST\Resources\PageResource;
-use Signifly\Shopify\Shopify;
+use Pactode\Shopify\Factory;
+use Pactode\Shopify\REST\Cursor;
+use Pactode\Shopify\REST\Resources\ApiResource;
+use Pactode\Shopify\REST\Resources\ArticleResource;
+use Pactode\Shopify\REST\Resources\AssetResource;
+use Pactode\Shopify\REST\Resources\BlogResource;
+use Pactode\Shopify\REST\Resources\PageResource;
+use Pactode\Shopify\Shopify;
 
 class ManagesOnlineStoreTest extends TestCase
 {
