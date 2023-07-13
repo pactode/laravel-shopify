@@ -21,7 +21,7 @@ The package will automatically register itself.
 
 ## Documentation
 
-You can find the full documentation [here](#).
+You can find the full documentation [here](https://pactode.gitbook.io/laravel-shopify/).
 
 
 ## Testing
