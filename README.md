@@ -1,10 +1,11 @@
-<p align="center">
-    <img src="https://user-images.githubusercontent.com/5956778/124729976-33b6fb00-df11-11eb-997f-1c8ce5e17152.png" width="400" />
-</p>
+<img src="https://github.com/pactode/laravel-shopify/assets/5956778/b1ae7862-2938-4a67-88ea-738cc4aa9528" alt="Laravel Shopify" width="780" />
 
 # Make requests to the Shopify API from your Laravel app
 
-![Tests](https://github.com/pactode/laravel-shopify/workflows/Tests/badge.svg)
+<a href="https://github.com/pactode/laravel-shopify/actions"><img alt="GitHub Workflow Status (main)" src="https://img.shields.io/github/actions/workflow/status/pactode/laravel-shopify/tests.yml?branch=main&label=tests&style=round-square"></a>
+<a href="https://packagist.org/packages/pactode/laravel-shopify"><img alt="Total Downloads" src="https://img.shields.io/packagist/dt/pactode/laravel-shopify"></a>
+<a href="https://packagist.org/packages/pactode/laravel-shopify"><img alt="Latest Version" src="https://img.shields.io/packagist/v/pactode/laravel-shopify"></a>
+<a href="https://packagist.org/packages/pactode/laravel-shopify"><img alt="License" src="https://img.shields.io/github/license/pactode/laravel-shopify"></a>
 
 The `pactode/laravel-shopify` package allows you to easily make requests to the Shopify API.
 
