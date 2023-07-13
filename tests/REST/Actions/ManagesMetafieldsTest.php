@@ -27,7 +27,7 @@ test('it creates a metafield', function (string $method, string $expectedUri, ar
     $metafield = $this->shopify->$method(...$params);
 
     Http::assertSent(function (Request $request) use ($payload, $expectedUri) {
-        expect($request->url())->toBe($this->shopify->getBaseUrl() . $expectedUri);
+        expect($request->url())->toBe($this->shopify->getBaseUrl().$expectedUri);
         expect($request->method())->toBe('POST');
         expect($request->data())->toBe(['metafield' => $payload]);
 
@@ -49,7 +49,7 @@ test('it gets metafields count', function (string $method, string $expectedUri, 
     $count = $this->shopify->$method(...$params);
 
     Http::assertSent(function (Request $request) use ($expectedUri) {
-        expect($request->url())->toBe($this->shopify->getBaseUrl() . $expectedUri);
+        expect($request->url())->toBe($this->shopify->getBaseUrl().$expectedUri);
         expect($request->method())->toBe('GET');
 
         return true;
@@ -70,7 +70,7 @@ test('it gets metafields', function (string $method, string $expectedUri, array 
     $metafields = $this->shopify->$method(...$params);
 
     Http::assertSent(function (Request $request) use ($expectedUri) {
-        expect($request->url())->toBe($this->shopify->getBaseUrl() . $expectedUri);
+        expect($request->url())->toBe($this->shopify->getBaseUrl().$expectedUri);
         expect($request->method())->toBe('GET');
 
         return true;

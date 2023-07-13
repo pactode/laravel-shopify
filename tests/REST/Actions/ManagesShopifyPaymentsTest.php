@@ -22,7 +22,7 @@ test('it gets the balance', function () {
 
     $resource = $this->shopify->getShopifyPaymentsBalance();
 
-    Http::assertSent(fn (Request $request) => $request->url() === $this->shopify->getBaseUrl() . $path
+    Http::assertSent(fn (Request $request) => $request->url() === $this->shopify->getBaseUrl().$path
         && $request->method() === 'GET'
     );
 
@@ -38,7 +38,7 @@ test('it gets a list of disputes', function () {
 
     $resources = $this->shopify->getShopifyPaymentsDisputes();
 
-    Http::assertSent(fn (Request $request) => $request->url() === $this->shopify->getBaseUrl() . $path
+    Http::assertSent(fn (Request $request) => $request->url() === $this->shopify->getBaseUrl().$path
         && $request->method() === 'GET'
     );
 
@@ -58,7 +58,7 @@ test('it finds a dispute', function () {
 
     $path = '/shopify_payments/disputes/'.$disputeId.'.json';
 
-    Http::assertSent(fn (Request $request) => $request->url() === $this->shopify->getBaseUrl() . $path
+    Http::assertSent(fn (Request $request) => $request->url() === $this->shopify->getBaseUrl().$path
         && $request->method() === 'GET'
     );
 
@@ -74,7 +74,7 @@ test('it gets a list of payouts', function () {
 
     $path = '/shopify_payments/payouts.json';
 
-    Http::assertSent(fn (Request $request) => $request->url() === $this->shopify->getBaseUrl() . $path
+    Http::assertSent(fn (Request $request) => $request->url() === $this->shopify->getBaseUrl().$path
         && $request->method() === 'GET'
     );
 
@@ -93,7 +93,7 @@ test('it finds a payout', function () {
 
     $resource = $this->shopify->getShopifyPaymentsPayout($payoutId);
 
-    Http::assertSent(fn (Request $request) => $request->url() === $this->shopify->getBaseUrl() . $path
+    Http::assertSent(fn (Request $request) => $request->url() === $this->shopify->getBaseUrl().$path
         && $request->method() === 'GET'
     );
 
@@ -108,7 +108,7 @@ test('it gets a list of transactions', function () {
     $path = '/shopify_payments/balance/transactions.json';
     $resources = $this->shopify->getShopifyPaymentsBalanceTransactions();
 
-    Http::assertSent(fn (Request $request) => $request->url() === $this->shopify->getBaseUrl() . $path
+    Http::assertSent(fn (Request $request) => $request->url() === $this->shopify->getBaseUrl().$path
         && $request->method() === 'GET'
     );
 
