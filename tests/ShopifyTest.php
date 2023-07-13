@@ -1,50 +1,39 @@
 <?php
 
-namespace Pactode\Shopify\Tests;
-
 use Pactode\Shopify\Shopify;
 
-class ShopifyTest extends TestCase
-{
-    /** @test **/
-    public function it_returns_the_shopify_instance_from_the_container()
-    {
-        $shopify = $this->app->make('shopify');
+uses(Tests\TestCase::class);
 
-        $this->assertInstanceOf(Shopify::class, $shopify);
-    }
+it('returns the shopify instance from the container', function () {
+    $shopify = $this->app->make('shopify');
 
-    /** @test **/
-    public function it_returns_the_same_shopify_instance_from_the_container()
-    {
-        $shopifyA = $this->app->make('shopify');
-        $shopifyB = $this->app->make('shopify');
+    $this->assertInstanceOf(Shopify::class, $shopify);
+});
 
-        $this->assertSame($shopifyA, $shopifyB);
-    }
+it('returns the same shopify instance from the container', function () {
+    $shopifyA = $this->app->make('shopify');
+    $shopifyB = $this->app->make('shopify');
 
-    /** @test **/
-    public function it_memoizes_the_http_client()
-    {
-        $shopify = $this->app->make('shopify');
+    $this->assertSame($shopifyA, $shopifyB);
+});
 
-        $clientA = $shopify->getHttpClient();
-        $clientB = $shopify->getHttpClient();
+it('memoizes the http client', function () {
+    $shopify = $this->app->make('shopify');
 
-        $this->assertSame($clientA, $clientB);
-    }
+    $clientA = $shopify->getHttpClient();
+    $clientB = $shopify->getHttpClient();
 
-    /** @test **/
-    public function it_updates_credentials_and_resets_client()
-    {
-        $shopify = $this->app->make('shopify');
+    $this->assertSame($clientA, $clientB);
+});
 
-        $clientA = $shopify->getHttpClient();
+it('updates credentials and resets client', function () {
+    $shopify = $this->app->make('shopify');
 
-        $shopify = $shopify->withCredentials('1234', '1234', '2021-01');
+    $clientA = $shopify->getHttpClient();
 
-        $clientB = $shopify->getHttpClient();
+    $shopify = $shopify->withCredentials('1234', '1234', '2021-01');
 
-        $this->assertNotSame($clientA, $clientB);
-    }
-}
+    $clientB = $shopify->getHttpClient();
+
+    $this->assertNotSame($clientA, $clientB);
+});

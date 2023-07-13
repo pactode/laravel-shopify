@@ -7,11 +7,15 @@ use Illuminate\Http\Request;
 class Webhook
 {
     const HEADER_HMAC_SIGNATURE = 'X-Shopify-Hmac-Sha256';
+
     const HEADER_SHOP_DOMAIN = 'X-Shopify-Shop-Domain';
+
     const HEADER_TOPIC = 'X-Shopify-Topic';
 
     protected string $domain;
+
     protected string $topic;
+
     protected array $payload;
 
     public function __construct(string $domain, string $topic, array $payload)

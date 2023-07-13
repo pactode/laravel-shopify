@@ -1,33 +1,24 @@
 <?php
 
-namespace Pactode\Shopify\Tests;
-
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 
-class MacrosTest extends TestCase
-{
-    /** @test **/
-    public function it_registers_shopify_webhooks_macro_on_route()
-    {
-        $this->assertTrue(Route::hasMacro('shopifyWebhooks'));
-    }
+uses(Tests\TestCase::class);
 
-    /** @test **/
-    public function it_register_shopify_macros_on_request()
-    {
-        $this->assertTrue(Request::hasMacro('shopifyShopDomain'));
-        $this->assertTrue(Request::hasMacro('shopifyHmacSignature'));
-        $this->assertTrue(Request::hasMacro('shopifyTopic'));
-    }
+it('registers shopify_webhooks macro on route', function () {
+    expect(Route::hasMacro('shopifyWebhooks'))->toBeTrue();
+});
 
-    /** @test **/
-    public function it_registers_endpoint_when_using_shopify_webhooks_macro()
-    {
-        Route::shopifyWebhooks();
+it('registers shopify macros on request', function () {
+    expect(Request::hasMacro('shopifyShopDomain'))->toBeTrue();
+    expect(Request::hasMacro('shopifyHmacSignature'))->toBeTrue();
+    expect(Request::hasMacro('shopifyTopic'))->toBeTrue();
+});
 
-        Route::getRoutes()->refreshNameLookups();
+it('registers endpoint when using shopify_webhooks macro', function () {
+    Route::shopifyWebhooks();
 
-        $this->assertTrue(Route::has('shopify.webhooks'));
-    }
-}
+    Route::getRoutes()->refreshNameLookups();
+
+    expect(Route::has('shopify.webhooks'))->toBeTrue();
+});

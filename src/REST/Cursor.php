@@ -6,17 +6,21 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 use Iterator;
-use RuntimeException;
 use Pactode\Shopify\Shopify;
+use RuntimeException;
 
 class Cursor implements Iterator
 {
     const LINK_REGEX = '/<(.*page_info=([a-z0-9\-]+).*)>; rel="?{type}"?/i';
 
     protected Shopify $shopify;
+
     protected int $position = 0;
+
     protected array $links = [];
+
     protected array $results = [];
+
     protected string $resourceClass;
 
     public function __construct(Shopify $shopify, Collection $results)

@@ -19,10 +19,9 @@
         "illuminate/support": "^10.0"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.0",
+        "laravel/pint": "^1.10",
         "orchestra/testbench": "^8.0",
-        "phpunit/phpunit": "^9.0",
-        "signifly/php-config": "^1.0"
+        "pestphp/pest": "^1.23"
     },
     "autoload": {
         "psr-4": {
@@ -31,14 +30,17 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Pactode\\Shopify\\Tests\\": "tests"
+            "Tests\\": "tests/"
         }
     },
     "scripts": {
-        "test": "vendor/bin/phpunit"
+        "test": "vendor/bin/pest -v"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     },
     "extra": {
         "laravel": {

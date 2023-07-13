@@ -31,7 +31,7 @@ class WebhookFailed extends Exception
      *
      * NOTE: https://laravel.com/docs/8.x/errors#renderable-exceptions
      *
-     * @param  \Illuminate\Http\Request $request
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function render($request)

@@ -1,13 +1,13 @@
 <?php
 
-namespace Pactode\Shopify\Tests;
+namespace Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
 use Pactode\Shopify\ShopifyServiceProvider;
 
 abstract class TestCase extends Orchestra
 {
-    public function setUp(): void
+    protected function setUp(): void
     {
         $this->setApplicationKey();
 

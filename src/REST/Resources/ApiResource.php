@@ -26,8 +26,7 @@ class ApiResource implements ArrayAccess, Arrayable
     /**
      * Get all of the attributes except for a specified array of keys.
      *
-     * @param  array|string $keys
-     * @return array
+     * @param  array|string  $keys
      */
     public function except($keys): array
     {
@@ -37,8 +36,7 @@ class ApiResource implements ArrayAccess, Arrayable
     /**
      * Get a subset of the attributes.
      *
-     * @param  array|string $keys
-     * @return array
+     * @param  array|string  $keys
      */
     public function only($keys): array
     {
@@ -46,7 +44,7 @@ class ApiResource implements ArrayAccess, Arrayable
     }
 
     /**
-     * @param  string $key
+     * @param  string  $key
      * @return mixed
      */
     public function __get($key)
@@ -59,8 +57,7 @@ class ApiResource implements ArrayAccess, Arrayable
     }
 
     /**
-     * @param  string $key
-     * @return bool
+     * @param  string  $key
      */
     public function __isset($key): bool
     {
@@ -119,7 +116,7 @@ class ApiResource implements ArrayAccess, Arrayable
     /**
      * Get an attribute.
      *
-     * @param  string $key
+     * @param  string  $key
      * @return mixed
      */
     protected function getAttribute($key)
@@ -130,8 +127,8 @@ class ApiResource implements ArrayAccess, Arrayable
     /**
      * Set an attribute.
      *
-     * @param string $key
-     * @param mixed $value
+     * @param  string  $key
+     * @param  mixed  $value
      */
     protected function setAttribute($key, $value)
     {

@@ -51,7 +51,9 @@ class Shopify
     use TransformsResources;
 
     protected string $accessToken;
+
     protected string $domain;
+
     protected string $apiVersion;
 
     protected ?PendingRequest $httpClient = null;
