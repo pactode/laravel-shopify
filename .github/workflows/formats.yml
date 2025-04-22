@@ -1,46 +1,24 @@
 name: Formats
 
-on: ['push', 'pull_request']
+on:
+  push:
+    paths:
+      - '**.php'
 
 jobs:
-  ci:
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      fail-fast: true
-      matrix:
-        os: [ubuntu-latest]
-        php: [8.3]
-        dependency-version: [prefer-stable]
-
-    name: Formats P${{ matrix.php }} - ${{ matrix.os }} - ${{ matrix.dependency-version }}
+  php-code-styling:
+    runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v4
         with:
           ref: ${{ github.head_ref }}
 
-      - name: Cache dependencies
-        uses: actions/cache@v1
+      - name: Fix PHP code style issues
+        uses: aglipanci/laravel-pint-action@v2
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          path: ~/.composer/cache/files
-          key: dependencies-php-${{ matrix.php }}-composer-${{ hashFiles('composer.json') }}
-
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: 8.3
-          extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, pdo_mysql, bcmath, soap, intl, gd, exif, iconv, imagick
-          coverage: none
-
-      - name: Install Composer dependencies
-        run: composer update --${{ matrix.dependency-version }} --no-interaction --prefer-dist
-
-      - name: Run Pint
-        run: ./vendor/bin/pint
-
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Apply style changes
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          commit_message: Fix styling
